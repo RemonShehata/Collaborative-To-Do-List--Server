@@ -66,8 +66,23 @@ public class JsonUtil {
         user.setPassword(obj.getString("password"));
         return user;
     }
-     public static TaskModel toTaskModel(JsonObject obj) {
+
+    public static TaskModel toTaskModel(JsonObject obj) {
         TaskModel task = new TaskModel();
+        task.setTitle(obj.getString("title"));
+        task.setDescription(obj.getString("description"));
+        task.setTask_status(obj.getString("task_status"));
+        task.setAssign_date(Timestamp.valueOf(obj.getString("assign_date")));
+        task.setDeadline(Timestamp.valueOf(obj.getString("deadline")));
+        task.setList_id(obj.getInt("list_id"));
+        task.setUser_id(obj.getInt("user_id"));
+        task.setAssign_status(obj.getString("assign_status"));
+        return task;
+    }
+
+    public static TaskModel toUpdateTaskModel(JsonObject obj) {
+        TaskModel task = new TaskModel();
+        task.setTask_id(obj.getInt("task_id"));
         task.setTitle(obj.getString("title"));
         task.setDescription(obj.getString("description"));
         task.setTask_status(obj.getString("task_status"));
@@ -149,5 +164,26 @@ public class JsonUtil {
                 .add("array", jArr)
                 .build();
         return obj;
+    }
+
+    public static ListModel toListModel(JsonObject obj) {
+        ListModel listModel = new ListModel();
+        listModel.setList_id(obj.getInt("list_id"));
+        listModel.setTitle(obj.getString("title"));
+        listModel.setColor(obj.getString("color"));
+        listModel.setCreate_date(Timestamp.valueOf(obj.getString("create_date")));
+        listModel.getUser().setId(obj.getInt("user_id"));
+        return listModel;
+    }
+
+    public static JsonObject fromBoolean(boolean b) {
+        JsonObject obj = Json.createObjectBuilder()
+                .add("status", b)
+                .build();
+        return obj;
+    }
+
+    public static boolean toBoolean(JsonObject obj) {
+        return obj.getBoolean("status");
     }
 }
