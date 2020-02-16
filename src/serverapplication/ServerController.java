@@ -5,7 +5,11 @@
  */
 package serverapplication;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.InetAddress;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.application.Platform;
@@ -53,7 +57,7 @@ public class ServerController implements Initializable {
             //serverConnector.setIsRunning(true);
             serverConnector = new ServerConnector();
             serverConnector.startServer();
-                serverToggleButton.setId("red");
+            serverToggleButton.setId("red");
             serverToggleButton.setText("Stop");
             statusLabel.setText("Up and Running");
             System.out.println("serever running");
@@ -68,13 +72,13 @@ public class ServerController implements Initializable {
     }
 
     @FXML
-    private void getIpButton(ActionEvent event) {
-          Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                        alert.setHeaderText(null);
-                        alert.setTitle("Server IP");
-                        alert.setContentText("server ip is " );
-                        alert.showAndWait();
-        
+    private void getIpButton(ActionEvent event) throws UnknownHostException {
+//          Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//                        alert.setHeaderText(null);
+//                        alert.setTitle("Server IP");
+//                        alert.setContentText("server ip is " );
+//                        alert.showAndWait();
+//        
     }
 
     @FXML
@@ -82,7 +86,5 @@ public class ServerController implements Initializable {
         Platform.exit();
         System.exit(0);
     }
-     
-     
 
 }
