@@ -13,28 +13,32 @@ Collaborative To-Do List is a client-server desktop application through which th
 
 ### Installing
 - **Option 1:**  Run the exe file
-  1. Download the final exe from [this link](https://drive.google.com/drive/folders/1CZYGqfnhJ-DhukPjVLhISt4ZIv-stO-V?usp=sharing)
+  1. Download the final exe [here](https://drive.google.com/drive/folders/1CZYGqfnhJ-DhukPjVLhISt4ZIv-stO-V?usp=sharing)
   2. Click start to start the server <br /><br />
 - **Option 2:** Run the code from IDE
   1. run the app in any Java IDE
   
+  
+ ### Built using
+ - Java SE.
+ - JavaFX.
+ - MVC.
+ - JDBC.
+ - MySQL Workbench.
+ - Sockets.
+ - I/O Streams.
+ - JSON/GSON.
+  
  ### Authors
-   - [Remon Shehata](https://github.com/RemonShehata)
-   - [Asmaa Tarek ](https://github.com/Asmaa933)
-   - [Mazen Mohamed](https://github.com/MazenAbdelgawad) 
-   - [Zeinab Ahmed]()
-   - [Ahmed Wagdy](https://github.com/AhmedWagdyRashad)
+ - [Remon Shehata](https://github.com/RemonShehata)
+ - [Asmaa Tarek ](https://github.com/Asmaa933)
+ - [Mazen Mohamed](https://github.com/MazenAbdelgawad) 
+ - [Zeinab Ahmed]()
+ - [Ahmed Wagdy](https://github.com/AhmedWagdyRashad)
   
  ### License
  This project is licensed under the MIT License - see the LICENSE.md file for details
  
  ### Screenshots
- ![server1](https://user-images.githubusercontent.com/47400411/85474575-30c2c400-b5b5-11ea-95f7-0255c99d8481.PNG)
- 
- ![server2](https://user-images.githubusercontent.com/47400411/85474806-78e1e680-b5b5-11ea-8b29-6d8ff24e5ea2.PNG)
- 
+ ![server1](https://user-images.githubusercontent.com/47400411/85474575-30c2c400-b5b5-11ea-95f7-0255c99d8481.PNG) &nbsp; &nbsp; &nbsp;  ![server2](https://user-images.githubusercontent.com/47400411/85474806-78e1e680-b5b5-11ea-8b29-6d8ff24e5ea2.PNG) 
  ![server3](https://user-images.githubusercontent.com/47400411/85474855-88f9c600-b5b5-11ea-99d8-a335a6ff81f9.PNG)
-
- 
-  
-  
